@@ -4,8 +4,8 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 
 ### Table of Contents
 
-1. [Read: 01 - SMACSS and Responsive Web Design](read-01.md)
-1. [Read: 02 - jQuery, Events, and The DOM](read-02.md)
+1. [Read: 01 - SMACSS and Responsive Web Design](read1.md)
+1. [Read: 02 - jQuery, Events, and The DOM](read2.md)
 
 #### Contact Info
 
