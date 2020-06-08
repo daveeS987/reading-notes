@@ -56,3 +56,7 @@
 
 ![JQuery Events](images/JQueryEvents.png)
 
+<br>
+<br>
+
+[Link back to Table of Contents](README.md)
