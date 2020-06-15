@@ -12,3 +12,8 @@
 - use npm to install express(when express is installed node_modules is created)
 
 `const express = require('express');` is how we link js files from package.json into a server js file. 
+
+nodemon is like using live server
+
+
+when deploying site to heroku, make sure to change 'server' inside app.js to corresponding heroku address
