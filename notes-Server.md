@@ -26,12 +26,14 @@ $('map').html(mapHTML);    is like using append
 
 remember to empty before rendering so duplicates aren't made
 
+
+
 npm init -y
 npm install express  - allows javascript to be a web server
 npm install dotenv
-npm install cors   - helper library
+npm install cors   (cross origin resource sharing) - helper library
 touch .env      - can put PORT = 3000
 
-nodemon
+nodemon - watches server and restarts when changes are made
 
 xhr is ajax call
