@@ -17,3 +17,21 @@ nodemon is like using live server
 
 
 when deploying site to heroku, make sure to change 'server' inside app.js to corresponding heroku address
+
+
+
+remember to prevent default on get location to prevent reload
+
+$('map').html(mapHTML);    is like using append
+
+remember to empty before rendering so duplicates aren't made
+
+npm init -y
+npm install express  - allows javascript to be a web server
+npm install dotenv
+npm install cors   - helper library
+touch .env      - can put PORT = 3000
+
+nodemon
+
+xhr is ajax call
