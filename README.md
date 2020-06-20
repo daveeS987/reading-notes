@@ -10,6 +10,7 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 1. [Read: 04 - Responsive Web Design and Regular Expressions](read4.md)
 1. [Read: 05 - Heroku Deployment](read5.md)
 1. [Read: 06 - Node, Express, and API](read6.md)
+1. [Read: 07 - APIs continued](read7.md)
 
 #### Contact Info
 
