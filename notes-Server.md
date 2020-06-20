@@ -28,7 +28,7 @@ remember to empty before rendering so duplicates aren't made
 
 
 
-npm init -y
+npm init -y   : creates package.json file
 npm install express  - allows javascript to be a web server
 npm install dotenv
 npm install cors   (cross origin resource sharing) - helper library
