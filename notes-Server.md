@@ -37,3 +37,4 @@ touch .env      - can put PORT = 3000
 nodemon - watches server and restarts when changes are made
 
 xhr is ajax call
+
