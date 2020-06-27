@@ -2,8 +2,8 @@
 
 Links: 
 
-[Functional Programming Concepts](https://medium.com/the-renaissance-developer/concepts-of-functional-programming-in-javascript-6bc84220d2aa)  
-[Refactoring Javascript for Readibility](https://dev.to/healeycodes/refactoring-javascript-for-performance-and-readability-with-examples-1hec)
+- [Functional Programming Concepts](https://medium.com/the-renaissance-developer/concepts-of-functional-programming-in-javascript-6bc84220d2aa)  
+- [Refactoring Javascript for Readibility](https://dev.to/healeycodes/refactoring-javascript-for-performance-and-readability-with-examples-1hec)
 
 
 ## Concepts of Functional Programming
