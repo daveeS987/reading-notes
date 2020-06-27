@@ -20,6 +20,7 @@ Links:
 - OFFSET
 
 
+npm install pg (to bring in pg library)
 <br>
 <br>
 
