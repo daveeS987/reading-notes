@@ -24,3 +24,9 @@ Functions as first-class entities:
   - functions are treated as values and used as data
 
 Higher-Order Functions
+
+
+<br>
+<br>
+
+[Back to Table of Contents](README.md)

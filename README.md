@@ -13,6 +13,7 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 1. [Read: 07 - APIs continued](read7.md)
 1. [Read: 08 - SQL](read8.md)
 1. [Read: 09 - Refactoring](read9.md)
+1. [Read: 10 - The Call Stack and Debugging](read10.md)
 
 #### Contact Info
 
