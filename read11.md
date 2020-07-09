@@ -8,6 +8,11 @@
 - [EJS Tutorial](https://scotch.io/tutorials/use-ejs-to-template-your-node-application)
 - [Source Code for the EJS Tutuorial](https://github.com/scotch-io/node-ejs)
 
+res.render(template, obj)
+
+post - request.body k/v
+get - request.query
+
 <br>
 <br>
 
