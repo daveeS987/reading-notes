@@ -15,6 +15,7 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 1. [Read: 09 - Refactoring](read9.md)
 1. [Read: 10 - The Call Stack and Debugging](read10.md)
 1. [Read: 11 - EJS](read11.md)
+1. [Read: 12 - Components](read12.md)
 
 #### Contact Info
 
