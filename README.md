@@ -17,6 +17,7 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 1. [Read: 11 - EJS](read11.md)
 1. [Read: 12 - Components](read12.md)
 1. [Read: 13 - Update/Delete](read13.md)
+1. [Read: 14a - DB Normalization](read14.md)
 
 #### Contact Info
 

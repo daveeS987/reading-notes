@@ -57,14 +57,14 @@ install postgres into your root folder. Postgres allows us to safely make SQL re
 and automatically sanitizes the input so users cannot maliciously inject harmful requests and delete data.
 see: https:xkcd.com/327/
 
-PSQL Database
++++++++++++++++++= PSQL Database +++++++++++++++++++++
 
-In Terminal Create Database:
+### In Terminal Create Database:
 
 - `psql`
 - `CREATE DATABASE dbname`;
 
-List of Common Commands:
+### List of Common Commands:
 
 - \l to view all databases
 - \c dbname to enter into your database
@@ -77,3 +77,6 @@ Put in .env file:
 Link to schema
 psql -f file.sql -d databasename
 ex: `psql -f schema.sql -d dbtest`
+
+Add to Heroku online, add this command to terminal
+`heroku pg:psql -f SCHEMA-FILE.sql --app ENTER_HEROKU_APP_NAME_HERE`
