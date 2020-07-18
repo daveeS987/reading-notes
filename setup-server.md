@@ -51,6 +51,7 @@ Exit nodemon in your terminal if it's still running.
 npm install superagent
 now initiailize superagent:
 const superagent = require('superagent');
+
 Ok. lets set up our SQL database. Exit nodemon in your terminal.
 make sure there is a file in your root folder named schema.sql this can be potatoes.
 install postgres into your root folder. Postgres allows us to safely make SQL requests to our database
