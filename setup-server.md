@@ -18,12 +18,14 @@ go to your .env file and specify your PORT variable
 usually 3000, I'm using 4000 today
 initialize our libraries.  
 You will just need to memorize these commands similiarly to how you learned ACP:
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const PORT = process.env.PORT;
 now get an 'instance' of express as our app:
 const app = express();
+
 this allows us to use CORS. CORS allows our server.js to communicate securely with other applications.  
 It allows your server to specify WHO can access its data and HOW it can be accessed. See:
 https:developer.mozilla.org/en-US/docs/Web/HTTP/CORS
