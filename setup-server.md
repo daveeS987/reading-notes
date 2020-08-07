@@ -83,3 +83,5 @@ ex: `psql -f schema.sql -d dbtest`
 
 Add to Heroku online, add this command to terminal
 `heroku pg:psql -f SCHEMA-FILE.sql --app ENTER_HEROKU_APP_NAME_HERE`
+
+heroku pg:psql -f path/to/schema.sql --app your-heroku-app-name-here
