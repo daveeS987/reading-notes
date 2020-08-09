@@ -23,6 +23,8 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 
 ### 401 Notes
 
+1. [Read: 01 - Node Ecosystem, TDD, CI/CD](4read1.md)
+
 #### Contact Info
 
 Check out my [GitHub](https://github.com/daveeS987)
