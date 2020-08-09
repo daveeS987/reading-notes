@@ -31,17 +31,17 @@ Links:
 
 1. Why would you want to run JavaScript code outside of a browser?
 
-- When you run Javascript inside a browser its limited to one thread. If you were to run it in the node.js system you can have an additional worker threads that can be responsible for asynchronous operations. These worker threads are managed by an event queue. Thats why node.js is considered to have a non-blocking event-driven asynchronous I/O architecture.
+When you run Javascript inside a browser its limited to one thread. If you were to run it in the node.js system you can have an additional worker threads that can be responsible for asynchronous operations. These worker threads are managed by an event queue. Thats why node.js is considered to have a non-blocking event-driven asynchronous I/O architecture.
 
-2. What is the difference between a module and a package?
+1. What is the difference between a module and a package?
 
-- Modules are libraries for Node.js. A package can be one or more modules grouped or packaged together.
+Modules are libraries for Node.js. A package can be one or more modules grouped or packaged together.
 
-3. What does the node package manager do?
+1. What does the node package manager do?
 
-- Aids in package installation, version management, and dependency management. Serves as an online repository for the publishing of opeen-source Node.js projects.
+Aids in package installation, version management, and dependency management. Serves as an online repository for the publishing of opeen-source Node.js projects.
 
-4. Provide code snippets showing 3 different ways to export a function from a node module
+1. Provide code snippets showing 3 different ways to export a function from a node module
 
 <br>
 <br>
