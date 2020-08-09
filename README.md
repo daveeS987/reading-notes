@@ -1,8 +1,10 @@
-## Code 301 Reading Notes
+# Reading Notes
 
 Hi my name is **Davee**. This website will be used to make notes as I go through my journey of learning software development.
 
-### Table of Contents
+## Table of Contents
+
+### 301 Notes
 
 1. [Read: 01 - SMACSS and Responsive Web Design](read1.md)
 1. [Read: 02 - jQuery, Events, and The DOM](read2.md)
@@ -18,6 +20,8 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 1. [Read: 12 - Components](read12.md)
 1. [Read: 13 - Update/Delete](read13.md)
 1. [Read: 14a - DB Normalization](read14.md)
+
+### 401 Notes
 
 #### Contact Info
 
