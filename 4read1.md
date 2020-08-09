@@ -42,3 +42,8 @@ Links:
 - Aids in package installation, version management, and dependency management. Serves as an online repository for the publishing of opeen-source Node.js projects.
 
 4. Provide code snippets showing 3 different ways to export a function from a node module
+
+<br>
+<br>
+
+[Back to Table of Contents](README.md)
