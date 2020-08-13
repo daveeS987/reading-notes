@@ -24,7 +24,8 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 ### 401 Notes
 
 1. [Engineering Topics](engineering_topics.md)
-1. [Read: 01 - Node Ecosystem, TDD, CI/CD](4read1.md)
+1. [Class 01 - Node Ecosystem, TDD, CI/CD](4read1.md)
+1. [Class 02 - Classes, Inheritance, Functional Programming](4read2.md)
 
 #### Contact Info
 
