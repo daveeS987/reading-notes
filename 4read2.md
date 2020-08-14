@@ -32,13 +32,21 @@
 
 1. Write an example of a Higher Order function and describe the use case it solves:
 
+```
+const arr1 = [1, 2, 3];
+const arr2 = arr1.map(item => item * 2);
+console.log(arr2);
+```
+
+Creates a new array using a callback function to mulipy each element by 2.
+
 ### Terms to know:
 
 - functional programming - the process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects. Functional programming is declarative rather than imperative, and application state flows through pure functions. Immutability is a central concept of functional programming because without it, the data flow in your program is lossy. Keep function and data separate.
 
 - pure function - when given the same inputs, alwasy returns the same output and has no side effects
 
-- higher-order function - any function which takes a function as an argument, returns a function, or both
+- higher-order function - Higher order functions are functions that operate on other functions, either by taking them as arguments or by returning them. In simple words, A Higher-Order function is a function that receives a function as an argument or returns the function as output.
 
 - immutable state - when the values of a property cannot change
 
