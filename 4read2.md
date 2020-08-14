@@ -15,22 +15,22 @@
 
 ### Questions:
 
-1. Name 3 advantages to Test Driven Development
+1. Name 3 advantages to Test Driven Development:  
    Leads to more modularized, flexible & extensible code. Gives organizations the ability to painlessly update their software to address new business requirements or other unforeseen variables. Writing the tests first requires you to really consider what do you want from the code.
 
-1. In what case would you need to use beforeEach() or afterEach() in a test suite?
+1. In what case would you need to use beforeEach() or afterEach() in a test suite?  
    f you have some work you need to do repeatedly for many tests, you can use beforeEach and afterEach. beforeEach and afterEach can handle asynchronous code in the same ways that tests can handle asynchronous code - they can either take a done parameter or return a promise.
 
-1. What is one downside of Test Driven Development
+1. What is one downside of Test Driven Development?  
    It necessitates a lot of time and effort up front, which can make development feel slow to begin with.
 
-1. What’s the primary difference between ES6 Classes and Constructor/Prototype Classes?
+1. What’s the primary difference between ES6 Classes and Constructor/Prototype Classes?  
    A class defines a type which can be instantiated at runtime, whereas a prototype is itself an object instance. A child of an ES6 class is another type definition which extends the parent with new properties and methods, which in turn can be instantiated at runtime. A child of a prototype is another object instance which delegates to the parent any properties that aren’t implemented on the child.
 
-1. Name a use case for a static method
+1. Name a use case for a static method:  
    Static methods are often used to create utility functions for an application. In other words, static methods have no access to data stored in specific objects.
 
-1. Write an example of a Higher Order function and describe the use case it solves
+1. Write an example of a Higher Order function and describe the use case it solves:
 
 ### Terms to know:
 
