@@ -74,7 +74,10 @@
 
 - https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0
 - https://apiumhub.com/tech-blog-barcelona/advantages-of-test-driven-development/#:~:text=One%20of%20the%20advantages%20of,address%20improvement%20suggestions%20with%20aplomb.
-- https://leantesting.com/test-driven-development/#:~:text=Now%2C%20let's%20take%20a%20look,can%20mean%20major%20refactoring%20requirements. -https://www.atlassian.com/continuous-delivery/continuous-integration#:~:text=Continuous%20integration%20(CI)%20is%20the,into%20a%20single%20software%20project.&text=The%20version%20control%20system%20is,style%20review%20tools%2C%20and%20more. -http://softwaretestingfundamentals.com/unit-testing/ -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#:~:text=Classes%20are%20a%20template%20for,shared%20with%20ES5%20classalike%20semantics.
+- https://leantesting.com/test-driven-development/#:~:text=Now%2C%20let's%20take%20a%20look,can%20mean%20major%20refactoring%20requirements.
+- https://www.atlassian.com/continuous-delivery/continuous-integration#:~:text=Continuous%20integration%20(CI)%20is%20the,into%20a%20single%20software%20project.&text=The%20version%20control%20system%20is,style%20review%20tools%2C%20and%20more.
+- http://softwaretestingfundamentals.com/unit-testing/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#:~:text=Classes%20are%20a%20template%20for,shared%20with%20ES5%20classalike%20semantics.
 
 <br>
 <br>
