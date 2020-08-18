@@ -42,3 +42,8 @@
 - document - are equivalent to records or rows of data in SQL. While a SQL row can reference data in other tables, Mongo documents usually combine that in a document. - [source](https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/#:~:text=Mongoose%20is%20an%20Object%20Data,library%20for%20MongoDB%20and%20Node.&text=It%20manages%20relationships%20between%20data,of%20those%20objects%20in%20MongoDB.)
 
 - Object Relation Mapping (ORM) - a programming technique for converting data between incompatible type systems using object-oriented programming languages. This creates, in effect, a "virtual object database" that can be used from within the programming language. Basically we are trying to interact with our database using our language of choice instead of SQL. [source](https://en.wikipedia.org/wiki/Object-relational_mapping)
+
+<br>
+<br>
+
+[Back to Table of Contents](README.md)
