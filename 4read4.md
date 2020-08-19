@@ -1,4 +1,4 @@
-## Data Modeling & NoSQL Databases
+## Advanced Mongo/Mongoose
 
 ### Questions:
 
