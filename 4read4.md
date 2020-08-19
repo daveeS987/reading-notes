@@ -36,7 +36,7 @@
 
 - schema - While Mongo is schema-less, SQL defines a schema via the table definition. A Mongoose ‘schema’ is a document data structure (or shape of the document) that is enforced via the application layer. - [source](https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/#:~:text=Mongoose%20is%20an%20Object%20Data,library%20for%20MongoDB%20and%20Node.&text=It%20manages%20relationships%20between%20data,of%20those%20objects%20in%20MongoDB.)
 
-- sanitize -
+- sanitize - computer data(user input) checked by software to see if it contains information that might be harmful to the system.
 
 - Structured Query Language (SQL) - is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data. - [source](https://en.wikipedia.org/wiki/SQL)
 
