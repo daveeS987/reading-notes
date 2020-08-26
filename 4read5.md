@@ -7,3 +7,8 @@ Read Links:
 - [Whats a linked list pt 2](https://medium.com/basecs/whats-a-linked-list-anyway-part-2-131d96f71996)
 
 A Linked list consist of things called nodes. A node can have a head and a tail. Each node is an object that has a value and next property which points to another node. The "next" property actually contains the next node object. If the next property does not contain a node, the value will be null. This will be considered the tail of the linked list. A use case for using linked list is for pagination.
+
+<br>
+<br>
+
+[Back to Table of Contents](README.md)
