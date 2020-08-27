@@ -18,7 +18,7 @@
    The data can be split into multiple servers and then merge together. So more data can be easily spread out across multiple servers.
 
 1. Give one strong argument for and against NoSQL Databases
-   One advantage of the NoSqL Databases is that it doesn't have to have a strict structure or schema. In the event you have to save a collection of data that has different properties or no relationship, you're able to do that. Having no structure can also be a disadvantage. If you have to update multiple data, there isn't a stuctured way to easily grab all the data and update it. So its more difficult to manipulate data based on certain criterias or relationships.
+   One advantage of the NoSqL Databases is that it doesn't need a strict structure or schema. In the event you have to save a collection of data that has different properties or no relationship, you're able to do that. Having no structure can also be a disadvantage. If you have to update multiple data, there isn't a stuctured way to easily grab all the data and update it. So its more difficult to manipulate data based on certain criterias or relationships.
 
 1. Define three related pieces of data in a possible application. An example for a store application might be Product, Category and Department. Describe the constraints and rules on each piece of data and how you would relate these pieces to each other. For example, each Product has a Category and belongs in a Department.
 
