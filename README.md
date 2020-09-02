@@ -30,6 +30,7 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 1. [Class 04 - Advanced Mongo/Mongoose](4read4.md)
 1. [Class 05 - Linked Lists](4read5.md)
 1. [Class 06 - HTTP and REST](4read6.md)
+1. [Class 07 - Express](4read7.md)
 
 #### Contact Info
 
