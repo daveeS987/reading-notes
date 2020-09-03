@@ -26,6 +26,7 @@
 1. Compare and contrast SOAP and ReST
 
    - SOAP is a protocol whereas REST is an architectural pattern.
+
    - SOAP uses service interfaces to expose its functionality to client applications while REST uses Uniform Service locators to access to the components on the hardware device.
    - SOAP needs more bandwidth for its usage whereas REST doesn’t need much bandwidth.
    - SOAP only works with XML formats whereas REST work with plain text, XML, HTML and JSON.
@@ -34,6 +35,7 @@
 ### Vocabulary Terms
 
 - SOAP - SOAP is a protocol designed before REST. The main idea behind designing SOAP was to ensure that programs built on different platforms and programming languages could exchange data in an easy manner.
+
 - ReST Verbs - POST, GET, PUT, PATCH, DELETE
 - CRUD Verbs - Create, Read, Update, Delete
 - Swagger - Swagger is in essence an Interface Description Language for describing RESTful APIs expressed using JSON. Swagger is used together with a set of open-source software tools to design, build, document, and use RESTful web services. Swagger includes automated documentation, code generation, and test-case generation.
