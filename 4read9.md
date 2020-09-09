@@ -32,8 +32,10 @@
    - methods, route, handlers.
 1. Which 3 things are you hoping to learn more about in the upcoming lecture/demo?
    - Writing test for these labs.
-1. What are you most excited about trying to implement or see how it works? - modularizing my code in an efficient, readable way
-   <br>
-   <br>
+1. What are you most excited about trying to implement or see how it works?
+   - modularizing my code in an efficient, readable way
+
+<br>
+<br>
 
 [Back to Table of Contents](README.md)
