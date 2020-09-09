@@ -32,6 +32,7 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 1. [Class 06 - HTTP and REST](4read6.md)
 1. [Class 07 - Express](4read7.md)
 1. [Class 08 - Express Routing & Connected API](4read8.md)
+1. [Class 09 - API Server](4read9.md)
 
 #### Contact Info
 
