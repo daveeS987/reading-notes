@@ -1,4 +1,4 @@
-## Read 11: Authentication
+## Read 13: Bearer Authorization
 
 ### Review, Research, and Discussion
 
