@@ -37,6 +37,7 @@ Hi my name is **Davee**. This website will be used to make notes as I go through
 1. [Stacks & Queues](4read-stacks-queues.md)
 1. [Class 12 - OAuth](4read12.md)
 1. [Class 13 - Bearer Authorization](4read13.md)
+1. [Class 14 - Access Control(ACL)](4read14.md)
 
 #### Contact Info
 
