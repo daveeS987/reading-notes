@@ -7,7 +7,7 @@
 1. Describe an application that would need access control.
    - Maybe a news blog
 1. What is a role used for?
-   - to assign certain access depending responsibility
+   - to assign certain access depending on responsibility
 1. Why is role based access control more scalable than discretionary or mandatory access control?
    - You can assign people a role with a set of priveleges already determined rather than determining the privileges based on the user. Makes for faster setup.
 
