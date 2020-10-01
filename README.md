@@ -1,6 +1,6 @@
 # Reading Notes
 
-Hi my name is **Davee**. This website will be used to make notes as I go through my journey of learning software development.
+Hi my name is **Davee**. This site will be used to document my notes as I'm learning software development.
 
 ## Table of Contents
 
