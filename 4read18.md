@@ -11,7 +11,7 @@
 1. Can a socket connection application be connected to multiple socket servers?
    - yes
 1. Can an application be both a socket server and a socket connection?
-   - theoretically yes but it shouldn't
+   - theoretically yes but it shouldn't?
 
 ### Vocabulary Terms
 
