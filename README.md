@@ -34,14 +34,17 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 08 - Express Routing & Connected API](4read8.md)
 1. [Class 09 - API Server](4read9.md)
 1. [Class 11 - Authentication](4read11.md)
-1. [Stacks & Queues](4read-stacks-queues.md)
-1. [Binary Trees and Binary Search Trees](4read-trees.md)
 1. [Class 12 - OAuth](4read12.md)
 1. [Class 13 - Bearer Authorization](4read13.md)
 1. [Class 14 - Access Control(ACL)](4read14.md)
 1. [Class 16 - Event Driven Applications](4read16.md)
 1. [Class 17 - TCP Servers](4read17.md)
 1. [Class 18 - Socket.io](4read18.md)
+
+### Data Structures
+
+1. [Stacks & Queues](4read-stacks-queues.md)
+1. [Binary Trees and Binary Search Trees](4read-trees.md)
 
 #### Contact Info
 
