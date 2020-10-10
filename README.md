@@ -40,6 +40,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 16 - Event Driven Applications](4read16.md)
 1. [Class 17 - TCP Servers](4read17.md)
 1. [Class 18 - Socket.io](4read18.md)
+1. [Class 19 - Meassage Queues](4read19.md)
 
 ### Data Structures
 
