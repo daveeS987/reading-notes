@@ -64,24 +64,21 @@ see: https:xkcd.com/327/
 
 ### In Terminal Create Database:
 
-- `psql`
-- `CREATE DATABASE dbname`;
+- Enter: `psql`
+- Enter: `CREATE DATABASE dbname`;
 
 ### List of Common Commands:
 
-- \l to view all databases
-- \c dbname to enter into your database
-- \dt to view the tables in your database
+- \l - to view all databases
+- \c DATABASE-NAME - to navigate into your database
+- \dt - to view the tables in your database
 - \q to quit
 
 Put in .env file:
-`DATABASE_URL = postgres:localhost:5432/_database name_`
+`DATABASE_URL = postgres:localhost:5432/DATABASE-NAME`
 
-Link to schema
-psql -f file.sql -d databasename
-ex: `psql -f schema.sql -d dbtest`
+To use schema file to start database:
+`psql -f file.sql -d DATABASE-NAME`
 
-Add to Heroku online, add this command to terminal
-`heroku pg:psql -f SCHEMA-FILE.sql --app ENTER_HEROKU_APP_NAME_HERE`
-
-heroku pg:psql -f path/to/schema.sql --app your-heroku-app-name-here
+Add to Heroku online, add this command to terminal:
+`heroku pg:psql -f path/to/schema-file.sql --app your-heroku-app-name-here`
