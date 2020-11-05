@@ -41,6 +41,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 17 - TCP Servers](4read17.md)
 1. [Class 18 - Socket.io](4read18.md)
 1. [Class 19 - Message Queues](4read19.md)
+1. [Class 26 - Component Based UI](4read26.md)
 1. [Class 27 - Props and State](4read27.md)
 
 ### Data Structures
