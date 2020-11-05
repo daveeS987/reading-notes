@@ -22,6 +22,17 @@
 
 1. What are you most excited about trying to implement or see how it works?
 
+### Links:
+
+- [setState explained](https://css-tricks.com/understanding-react-setstate/)
+- [handling events](https://facebook.github.io/react/docs/handling-events.html)
+- [forms](https://facebook.github.io/react/docs/forms.html)
+- [state and lifecycle](https://facebook.github.io/react/docs/state-and-lifecycle.html)
+- [components and props](https://facebook.github.io/react/docs/components-and-props.html)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library)
+- [RTL Testing Example](https://thomlom.dev/beginner-guide-testing-react-apps/)
+- [Roles Reference](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Roles)
+
 <br>
 <br>
 
