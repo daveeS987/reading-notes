@@ -48,6 +48,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 
 1. [Stacks & Queues](4read-stacks-queues.md)
 1. [Binary Trees and Binary Search Trees](4read-trees.md)
+1. [HashTables](4read-hashtables.md)
 
 #### Contact Info
 
