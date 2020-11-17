@@ -44,6 +44,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 26 - Component Based UI](4read26.md)
 1. [Class 27 - Props and State](4read27.md)
 1. [Class 28 - Component Composition](4read28.md)
+1. [Class 29 - Routing](4read29.md)
 
 ### Data Structures
 
