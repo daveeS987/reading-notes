@@ -5,7 +5,7 @@
 1. Do child components have direct access to props/state from the parent?  
    Not directly. Parents need to pass down props with methods or properties in order for child components to have access
 
-2. When a component “wraps” another component, how does the child component’s output get rendered?
+2. When a component “wraps” another component, how does the child component’s output get rendered?  
    Uses the parents structure to display the child elements. This pattern is useful for creating UI elements that are repeated through out a design.
 
 ```
@@ -36,7 +36,7 @@
    React composition, components, props
 1. Which 3 things are you hoping to learn more about in the upcoming lecture/demo?  
    Testing, Routing,
-1. What are you most excited about trying to implement or see how it works?
+1. What are you most excited about trying to implement or see how it works?  
    Using Browser Routers
 
 ### Links
