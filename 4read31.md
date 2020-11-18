@@ -2,31 +2,24 @@
 
 ### Review, Research, and Discussion
 
-1. Why do we not need more .html pages in a multi-page React app?
+1. Why do we not need more .html pages in a multi-page React app?  
+   React Routers allows you to put the content of a page inside a route component and switch to other pages that are contained inside a different route component
 2. If we wanted a component to show up on every page, where would we put it and why?
 
-```
-Outside the <BrowserRouter/>
-Inside the <BrowserRouter />, outside a <Route />
-Inside a <Route />
-```
+- Outside the `<BrowserRouter/>`
+- Inside the `<BrowserRouter />`, outside a `<Route />`
+- Inside a `<Route />`  
+   The second option. To use routes, everything needs to be inside a BrowserRouter. For content to be seen by all pages, it can't be inside a route component. The route component is meant for content that needs to be switched out if a user goes from page to page.
 
-3. What does props.children contain?
+3. What does props.children contain?  
+   All child elements that are inside the components opening and closing tag.
 
 ### Vocabulary Terms
 
-- Composition
-- Children / Child Components
-- Hash Routing
-- Link Routing
-
-### Preview
-
-1. Which 3 things had you heard about previously and now have better clarity on?
-
-1. Which 3 things are you hoping to learn more about in the upcoming lecture/demo?
-
-1. What are you most excited about trying to implement or see how it works?
+- Composition - a natural pattern of the component model. It's how we build components from other components, of varying complexity and specialization through props. Depending on how generalized these components are, they can be used in building many other components.
+- Children / Child Components - components that are inside other components
+- Hash Routing - uses URL hash, it puts no limitations on supported browsers or web server. Server-side routing is independent from client-side routing.
+- Link Routing - a dynamic routing algorithm in which each router shares knowledge of its neighbors with every other router in the network. A router sends its information about its neighbors only to all the routers through flooding. Information sharing takes place only whenever there is a change.
 
 ### Links:
 
