@@ -49,6 +49,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 32 - Custom Hooks](4read32.md)
 1. [Class 33 - Context API](4read33.md)
 1. [Class 34 - Login & Auth](4read34.md)
+1. [Class 36 - Application State with Redux](4read36.md)
 
 ### Data Structures
 
