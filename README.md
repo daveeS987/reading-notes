@@ -50,6 +50,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 33 - Context API](4read33.md)
 1. [Class 34 - Login & Auth](4read34.md)
 1. [Class 36 - Application State with Redux](4read36.md)
+1. [Class 37 - Redux - Combined Reducers](4read37.md)
 
 ### Data Structures
 
