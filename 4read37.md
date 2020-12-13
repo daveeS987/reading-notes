@@ -21,6 +21,10 @@
 
 ### Links:
 
+- [Multiple Reducers Example](https://www.youtube.com/watch?v=gBER4Or86hE)
+- [Redux Docs: Using Combined Reducers](https://redux.js.org/recipes/structuring-reducers/using-combinereducers/)
+- [Redux Docs: Combined Reducer Syntax](https://redux.js.org/api/combinereducers/)
+
 <br>
 <br>
 
