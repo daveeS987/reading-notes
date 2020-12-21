@@ -52,6 +52,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 36 - Application State with Redux](4read36.md)
 1. [Class 37 - Redux - Combined Reducers](4read37.md)
 1. [Class 38 - Redux - Asynchronous Actions](4read38.md)
+1. [Class 39 - Redux - continued...](4read39.md)
 
 ### Data Structures
 
