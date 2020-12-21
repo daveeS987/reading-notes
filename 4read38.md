@@ -3,21 +3,18 @@
 ### Review, Research, and Discussion
 
 1. How granular should your reducers be?
-1. Pro or Con – multiple reducers can “fire” when a commonly named action is dispatched
-1. Name a strategy for preventing the above
+    - You should break down your reducers to handle different sets of logic. 
+1. Pro or Con – multiple reducers can “fire” when a commonly named action is dispatched.
+    - There are both pros and cons of this. If you have intentions of having an action trigger two reducers, this can be beneficial. This can also be a con, if you accidently have two reducers that use the same action unintentionally. 
+1. Name a strategy for preventing the above.
+    - Just check your reducers to make sure they're not responding to the same action. Confirm you have different action types. 
 
 ### Vocabulary Terms
 
-- store
-- combined reducers
+- store - holds the whole state tree of your application
+- combined reducers - combines all the child reducers into one object and namespaces the state of each reducer under their own keys
 
-### Preview
 
-1. Which 3 things had you heard about previously and now have better clarity on?
-
-1. Which 3 things are you hoping to learn more about in the upcoming lecture/demo?
-
-1. What are you most excited about trying to implement or see how it works?
 
 ### Links:
 
