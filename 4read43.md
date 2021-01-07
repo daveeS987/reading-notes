@@ -3,13 +3,15 @@
 ### Review, Research, and Discussion
 
 1. What does React Native do when it builds your application?
+  
 1. Can you simply deploy a react web app to the phone?
+    - not really. 
 
 ### Vocabulary Terms
 
-- eject
-- android avd
-- expo
+- eject - it will stop hiding what create-react-app has installed under the hood and eject those things into the package.json file. This may be useful when you want to start doing more complex things and installing modules that may interact with other modules create-react-app has. 
+- android avd - Android Virtual Device (AVD) is a configuration that defines the characteristics of an Android phone, tablet, Wear OS, Android TV, or Automotive OS device that you want to simulate in the Android Emulator. The AVD Manager is an interface you can launch from Android Studio that helps you create and manage AVDs.
+- expo - a framework and a platform for universal React applications. It is a set of tools and services built around React Native and native platforms that help you develop, build, deploy, and quickly iterate on iOS, Android, and web apps from the same JavaScript/TypeScript codebase.
 
 
 
