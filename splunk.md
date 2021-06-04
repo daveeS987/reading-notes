@@ -11,23 +11,23 @@ Allows us to gather machine data so we can view it and analyze
 ## List some use-cases for Splunk:
 
 Monitoring logs, errors, or data
+
 - to provide customer support
 - understand customer behavior
 - troubleshoot the key apps
-- 
+-
 
 ## What are some other products similar to Splunk? What are the advantages and disadvantages to each?
-tableu
 
+tableu
 
 ## How does Splunk work? What is its basic architecture?
 
 Forwarders - collect data and forward to other splunk instances  
-Indexers -  data is stored  
-Search heads - analyze, visualize, and report data  
+Indexers - data is stored  
+Search heads - analyze, visualize, and report data
 
 ## Briefly explain the indexing process. Does Splunk use a relational or a non relational db for indexes?
-
 
 ## Common Port numbers used by Splunk?
 
@@ -83,11 +83,9 @@ Search heads - analyze, visualize, and report data
 
 - **index** -
 
+Questions:
 
-
-Questions: 
-
-How does the error object work? Is it globalally scoped within the repo, or individual files? 
+How does the error object work? Is it globalally scoped within the repo, or individual files?
 
 Where is our terminal output stored?
 
@@ -95,5 +93,4 @@ Can we listen to all output of the terminal?
 
 Can we listen to just errors?
 
-What do we do with the data? 
-
+What do we do with the data?
