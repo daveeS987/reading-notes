@@ -2,26 +2,26 @@
 
 ## Common Flex Properties
 
-Parent(flex container)  
-- display: 
+Parent(flex container)
+
+- display:
 - justify-content:
 - align-items:
 - flex-direction:
 - flex-wrap:
-- flex-flow: 
+- flex-flow:
 - align-content:
 
-
 Children(flex items)
+
 - order:
 - flex-grow:
 - flex-shrink:
-- flex-basis: 
+- flex-basis:
 - flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 - align-self
 
-
 <br>
 <br>
 
-[Back to Table of Contents](README.md)
+[Back to Table of Contents](../README.md)

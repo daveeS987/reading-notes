@@ -1,11 +1,11 @@
 # Heroku Deployment
 
-Links: 
+Links:
 
-- [Getting Started with Node](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction);  
+- [Getting Started with Node](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction);
 - [Deploying Simple Blogs to Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction);
 
-Commands Used 
+Commands Used
 
 - heroku create
 - git push heroku master
@@ -16,4 +16,4 @@ Commands Used
 <br>
 <br>
 
-[Back to Table of Contents](README.md)
+[Back to Table of Contents](../README.md)

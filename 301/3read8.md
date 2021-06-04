@@ -1,6 +1,6 @@
 # Read: 08 - SQL
 
-Links: 
+Links:
 
 - [SQL Bolt](https://sqlbolt.com/)
 - [W3 School Practice](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
@@ -12,16 +12,15 @@ Links:
   - DISTINCT
 - FROM
 - WHERE
-- GROUP BY 
+- GROUP BY
 - ORDER BY
   - ASC
   - DESC
 - LIMIT
 - OFFSET
 
-
 npm install pg (to bring in pg library)
 <br>
 <br>
 
-[Back to Table of Contents](README.md)
+[Back to Table of Contents](../README.md)

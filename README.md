@@ -6,20 +6,20 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 
 ### 301 Notes
 
-1. [Read: 01 - SMACSS and Responsive Web Design](3read1.md)
-1. [Read: 02 - jQuery, Events, and The DOM](3read2.md)
-1. [Read: 03 - Flexbox and Templating](3read3.md)
-1. [Read: 04 - Responsive Web Design and Regular Expressions](3read4.md)
-1. [Read: 05 - Heroku Deployment](3read5.md)
-1. [Read: 06 - Node, Express, and API](3read6.md)
-1. [Read: 07 - APIs continued](3read7.md)
-1. [Read: 08 - SQL](3read8.md)
-1. [Read: 09 - Refactoring](3read9.md)
-1. [Read: 10 - The Call Stack and Debugging](3read10.md)
-1. [Read: 11 - EJS](3read11.md)
-1. [Read: 12 - Components](3read12.md)
-1. [Read: 13 - Update/Delete](3read13.md)
-1. [Read: 14a - DB Normalization](3read14.md)
+1. [Read: 01 - SMACSS and Responsive Web Design](301/3read1.md)
+1. [Read: 02 - jQuery, Events, and The DOM](301/3read2.md)
+1. [Read: 03 - Flexbox and Templating](301/3read3.md)
+1. [Read: 04 - Responsive Web Design and Regular Expressions](301/3read4.md)
+1. [Read: 05 - Heroku Deployment](301/3read5.md)
+1. [Read: 06 - Node, Express, and API](301/3read6.md)
+1. [Read: 07 - APIs continued](301/3read7.md)
+1. [Read: 08 - SQL](301/3read8.md)
+1. [Read: 09 - Refactoring](301/3read9.md)
+1. [Read: 10 - The Call Stack and Debugging](301/3read10.md)
+1. [Read: 11 - EJS](301/3read11.md)
+1. [Read: 12 - Components](301/3read12.md)
+1. [Read: 13 - Update/Delete](301/3read13.md)
+1. [Read: 14a - DB Normalization](301/3read14.md)
 
 ### JavaScript 401 Notes
 

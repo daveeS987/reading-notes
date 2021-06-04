@@ -1,6 +1,6 @@
 # Read: 06 - Node, Express, and APIs
 
-Links: 
+Links:
 [An Introduction to Node.js on sitepoint.com](https://www.sitepoint.com/an-introduction-to-node-js)
 
 - Node.js is a JavaScript runtime built on chrome's V8 JavaScript Engine
@@ -13,15 +13,14 @@ Links:
 - node modules shouldn't be checked into version control and can always be recreated using npm install
 
 Purpose of Node.Js
+
 - installing(npm) and running(Node) various build tools designed to automate the process of developing JS application
 - runs JavaScript on the server
 
 Node Execution Model
 ![Node Execution Model](images/NodeExecutionModel.png)
 
-
-
 <br>
 <br>
 
-[Back to Table of Contents](README.md)
+[Back to Table of Contents](../README.md)

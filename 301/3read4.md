@@ -2,17 +2,17 @@
 
 ## Common Properties and Values
 
-**Grid Containers** 
+**Grid Containers**
+
 - display
 - grid-template-columns
 - grid-template-rows
-    - repeat (amount, percentage)
-    - fr (fractional - unit of measure)
+  - repeat (amount, percentage)
+  - fr (fractional - unit of measure)
 - grid-template: (grid-template-rows / grid-template-columns)
 
 - grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-- grid-gap 
-
+- grid-gap
 
 **Grid Items**
 
@@ -29,9 +29,7 @@
 - span
 - order
 
-
-
 <br>
 <br>
 
-[Back to Table of Contents](README.md)
+[Back to Table of Contents](../README.md)
