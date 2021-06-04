@@ -57,6 +57,8 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 
 ## Python 401 Notes
 
+1. [Class 1](py401/read1.md)
+
 ## Data Structures
 
 1. [Stacks & Queues](js401/4read-stacks-queues.md)
