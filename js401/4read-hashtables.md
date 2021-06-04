@@ -10,3 +10,5 @@
 ## Summary:
 
 Hash tables are basically a data structure of an array with a linked list. The way elements are added to a hashtable is to hash the key of the element using a hashfunction, this will return a number, and that number will determine the index of where the new element goes. Most hashfunctions will take a string, convert each element into an ASCII value, either add or multiply all those, multiply by a prime number, then divide by the size of the array. Good hash functions should be easy to compute, try to distribute uniformly, and try to minimize collision. Collision is when you attempt to add a new element to an array position that currently has something in it. When this happens, we can do something called chaining. Chaining will just add a node to that linkedlist.
+
+[Back to Table of Contents](../README.md)

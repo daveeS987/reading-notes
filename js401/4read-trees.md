@@ -19,3 +19,5 @@ There are two categories for traversal of trees
   - Post-order: left >> right >> root
 
 - Breadth First traversal will look through each node level by level. To implement this you will need to use a queue.
+
+[Back to Table of Contents](../README.md)

@@ -7,4 +7,4 @@ Queue is very similar to stack. It follows a first in, first out approach. A goo
 <br>
 <br>
 
-[Back to Table of Contents](README.md)
+[Back to Table of Contents](../README.md)

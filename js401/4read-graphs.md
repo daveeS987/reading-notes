@@ -20,3 +20,5 @@
 ## Notes
 
 There are two methods in order to traverse the graphs. Breadth first and Depth first. Breadth first will use a queueu to enquue the starting node. We will also declare a vistedNodes "set" to store our vertex. While there is stuff in the queue, it will dequeue a vertex and look at its corresponding neighbors list. For each neighbor vertex in that list, it will loop through and check if the vertex has already been added to our visitedNode "set". If it hasn't , that node will be added to our set and enqueued into our queue. This process will continue until there is nothing in our queue. Depth first will work the same except with a stack.
+
+[Back to Table of Contents](../README.md)

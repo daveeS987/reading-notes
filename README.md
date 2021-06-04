@@ -23,7 +23,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 
 ### JavaScript 401 Notes
 
-1. [Engineering Topics](engineering_topics.md)
+1. [Engineering Topics](js401/engineering_topics.md)
 1. [Class 01 - Node Ecosystem, TDD, CI/CD](js401/4read1.md)
 1. [Class 02 - Classes, Inheritance, Functional Programming](js401/4read2.md)
 1. [Class 03 - Data Modeling & NoSQL Databases](js401/4read3.md)
@@ -59,10 +59,10 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 
 ### Data Structures
 
-1. [Stacks & Queues](4read-stacks-queues.md)
-1. [Binary Trees and Binary Search Trees](4read-trees.md)
-1. [HashTables](4read-hashtables.md)
-1. [Graphs](4read-graphs.md)
+1. [Stacks & Queues](js401/4read-stacks-queues.md)
+1. [Binary Trees and Binary Search Trees](js401/4read-trees.md)
+1. [HashTables](js401/4read-hashtables.md)
+1. [Graphs](js401/4read-graphs.md)
 
 #### Contact Info
 
