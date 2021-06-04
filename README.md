@@ -4,7 +4,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 
 ## Table of Contents
 
-### 301 Notes
+## 301 Notes
 
 1. [Read: 01 - SMACSS and Responsive Web Design](301/3read1.md)
 1. [Read: 02 - jQuery, Events, and The DOM](301/3read2.md)
@@ -21,7 +21,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Read: 13 - Update/Delete](301/3read13.md)
 1. [Read: 14a - DB Normalization](301/3read14.md)
 
-### JavaScript 401 Notes
+## JavaScript 401 Notes
 
 1. [Engineering Topics](js401/engineering_topics.md)
 1. [Class 01 - Node Ecosystem, TDD, CI/CD](js401/4read1.md)
@@ -55,15 +55,15 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 39 - Redux - continued...](js401/4read39.md)
 1. [Class 41 - React Native](js401/4read41.md)
 
-### Python 401 Notes
+## Python 401 Notes
 
-### Data Structures
+## Data Structures
 
 1. [Stacks & Queues](js401/4read-stacks-queues.md)
 1. [Binary Trees and Binary Search Trees](js401/4read-trees.md)
 1. [HashTables](js401/4read-hashtables.md)
 1. [Graphs](js401/4read-graphs.md)
 
-#### Contact Info
+### Contact Info
 
 Check out my [GitHub](https://github.com/daveeS987)
