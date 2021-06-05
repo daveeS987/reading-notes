@@ -1,6 +1,6 @@
 # Class 1
 
-## Links
+## Links and Resources:
 
 - [Pain and Suffering](https://codefellows.github.io/code-401-python-guide/curriculum/class-01/notes/pain_suffering)
 - [Beginners Guide to Big O](https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)
@@ -9,7 +9,7 @@
 - [Awesome Python Environment](https://towardsdatascience.com/how-to-setup-an-awesome-python-environment-for-data-science-or-anything-else-35d358cc95d5)
 - [Python Module of the Week](https://pymotw.com/3/index.html)
 
-### Notes:
+## Notes:
 
 **Big O:**  
 Big O notation describes the performance or complexity of an algorithm in relation to the size or time needed to complete. It accounts for worst case scenario.
