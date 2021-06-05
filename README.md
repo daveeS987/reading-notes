@@ -21,6 +21,10 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Read: 13 - Update/Delete](301/3read13.md)
 1. [Read: 14a - DB Normalization](301/3read14.md)
 
+## Python 401 Notes
+
+1. [Class 1](py401/read1.md)
+
 ## JavaScript 401 Notes
 
 1. [Engineering Topics](js401/engineering_topics.md)
@@ -54,10 +58,6 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 38 - Redux - Asynchronous Actions](js401/4read38.md)
 1. [Class 39 - Redux - continued...](js401/4read39.md)
 1. [Class 41 - React Native](js401/4read41.md)
-
-## Python 401 Notes
-
-1. [Class 1](py401/read1.md)
 
 ## Data Structures
 
