@@ -24,8 +24,8 @@ Big O notation describes the performance or complexity of an algorithm in relati
 
 - Mutable Aliasing - similar to pass by reference in JavaScript. This refers to list and dictionaries that can have more than one reference, and changing one will change all references.
 - Immutable Values - ints, floats, strings, tuples. These values cant mutate. If you change these, behind the scene a new item is made and the reference points to that.
-- rebinding - changing an int or immutable value
-- mutating - changing things like list or dictionaries
+- rebinding - changing an immutable value by creating the new data and having the name point to that
+- mutating - changing things like list or dictionaries. Actual mutations occur
 
 **Python Environment:**
 
