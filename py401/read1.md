@@ -44,5 +44,6 @@ eval "$(pyenv virtualenv-init -)"
 - poetry - manages project dependencies, separate projects through virtual environments, build applications & libraries
 - Look into the following libraries - Black for code formatting, mypy for static type checker, pre-commit
 
-<br>
+<br/>
+
 [Back to Table of Contents](../README.md)
