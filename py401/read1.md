@@ -11,7 +11,8 @@
 
 ## Notes:
 
-**Big O:**  
+**Big O:**
+
 Big O notation describes the performance or complexity of an algorithm in relation to the size or time needed to complete. It accounts for worst case scenario.
 
 - O(1) - Best case. Regardless of the size of the data, it will execute in the same time.
