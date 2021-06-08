@@ -24,6 +24,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 ## Python 401 Notes
 
 1. [Class 1](py401/read1.md)
+1. [Class 2 - Testing and Modules](py401/read2.md)
 
 ## JavaScript 401 Notes
 
