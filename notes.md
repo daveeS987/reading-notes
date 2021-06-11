@@ -17,3 +17,17 @@ from FILE import the_file
   if **name** == "**main**":
 
 - from textwrap import dedent >> formats
+
+- how to initialize an existing directory- poetry init
+
+- use `pass` in place where python is expecting code
+
+triple quotations is the doctring >> """
+
+- poetry add >> will install dependencies
+
+- cat >> will show contents of file
+
+- run poetry install when downloading some elses repository
+
+pytest
