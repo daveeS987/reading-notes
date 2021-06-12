@@ -40,30 +40,26 @@ with open('dog_breeds.txt') as reader:
 
 ```python
 file = open('dog_breeds.txt')
-type(file)
-<class '_io.TextIOWrapper'>
+type(file) # TextIOWrapper
 ```
 
 **Buffered Binary File Types:**
 
 ```python
-open('abc.txt', 'rb')
-open('abc.txt', 'wb')
+file1 = open('abc.txt', 'rb')
+file2 = open('abc.txt', 'wb')
 file = open('dog_breeds.txt', 'rb')
-type(file)
-<class '_io.BufferedReader'>
+type(file) # io.BufferedReader
 file = open('dog_breeds.txt', 'wb')
-type(file)
-<class '_io.BufferedWriter'>
+type(file) # io.BufferedWriter
 ```
 
 **Raw File Types:** not typically used
 
 ```python
-open('abc.txt', 'rb', buffering=0)
+file1 = open('abc.txt', 'rb', buffering=0)
 file = open('dog_breeds.txt', 'rb', buffering=0)
-type(file)
-<class '_io.FileIO'>
+type(file) # io.FileIO
 ```
 
 **Read Methods:**
@@ -92,6 +88,16 @@ An example of iterating through the file object
 Working with Bytes
 
 - all the same methods apply, however each of the methods expects and returns a bytes object instead
+
+**Working with Two files at the same time:**
+
+```python
+d_path = 'dog_breeds.txt'
+d_r_path = 'dog_breeds_reversed.txt'
+with open(d_path, 'r') as reader, open(d_r_path, 'w') as writer:
+    dog_breeds = reader.readlines()
+    writer.writelines(reversed(dog_breeds))
+```
 
 ## Exceptions
 
