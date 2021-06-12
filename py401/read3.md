@@ -7,9 +7,7 @@
 - [Read & Write Files in Python - Companion Video](https://realpython.com/courses/reading-and-writing-files-python/)
 - [Reading and Writing Files in Python Quiz](https://realpython.com/quizzes/read-write-files-python/)
 
-## Notes
-
-### Read / Write files
+## Read / Write files
 
 ```python
 
@@ -95,4 +93,4 @@ An example of iterating through the file object
 
 - all the same methods apply, however each of the methods expects and returns a bytes object instead
 
-### Exceptions
+## Exceptions
