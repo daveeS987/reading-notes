@@ -31,3 +31,18 @@ triple quotations is the doctring >> """
 - run poetry install when downloading some elses repository
 
 pytest
+
+- poetry new
+- and also poetry install
+
+- empty string will evaluate to false
+- in python empty array is false >> javascript will be true
+- in python empty object is false >> js will be true
+
+- a tuple cant be manipulated but it can be overwritten
+- a tuple has to have a comma to be a tuple
+
+- use help()
+- dir()
+
+- look up python docs exceptions
