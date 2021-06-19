@@ -113,7 +113,7 @@ def add_after(value, target):
     node = Node(value)
 
     if self.head is None:
-      self.head = node;
+      self.head = node
       return self
 
     current = self.head
