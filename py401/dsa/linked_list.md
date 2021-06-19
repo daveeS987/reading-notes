@@ -26,7 +26,7 @@ Linked list are similar to arrays but they differ in how memory is allocated. Ar
 
 class Node:
     def __init__(self, value=None):
-        self.value = value
+        self.val = value
         self.next = None
 
 ```
@@ -118,7 +118,7 @@ def add_after(value, target):
 
     current = self.head
     while current.next is not None:
-        if current.value == target:
+        if current.val == target:
             node.next = current.next
             current.next = node
             return self
