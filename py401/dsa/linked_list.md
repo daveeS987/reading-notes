@@ -31,7 +31,7 @@ class Node:
 
 ```
 
-### Includes
+### Includes Method
 
 ```Python
 
@@ -55,7 +55,7 @@ Big O:
 - Time: O(n)
 - Space O(1)
 
-### Add to Beginning of List
+### Add to Beginning of List Method
 
 ```Python
 
@@ -78,7 +78,7 @@ Big O:
 - Time: O(1)
 - Space: O(1)
 
-### Add to End of List
+### Add to End of List Method
 
 ```Python
 
@@ -104,7 +104,7 @@ Big O:
 - Time: O(n)
 - Space: O(1)
 
-### Add after
+### Add After Method
 
 ```Python
 
