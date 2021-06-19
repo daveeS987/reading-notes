@@ -63,10 +63,6 @@ def insert(value):
 
     node = Node(value)
 
-    if(self.head is None):
-        self.head = node
-        return self
-
     node.next = self.head
     self.head = node
     return self
