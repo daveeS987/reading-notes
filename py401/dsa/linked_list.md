@@ -25,9 +25,9 @@ Linked list are similar to arrays but they differ in how memory is allocated. Ar
 ```python
 
 class Node:
-    def __init__(self, value=None):
+    def __init__(self, value=None, next=None):
         self.val = value
-        self.next = None
+        self.next = next
 
 ```
 
