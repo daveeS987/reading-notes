@@ -106,8 +106,7 @@ def add_after(value, target):
     node = Node(value)
 
     if self.head is None:
-      self.head = node
-      return self
+      return None
 
     current = self.head
     while current.next is not None:
