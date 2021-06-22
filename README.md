@@ -28,6 +28,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 3 - File IO & Exceptions](py401/read3.md)
 1. [Class 4 - Classes, Objects, Recursion, Pytest Fixtures & Coverage](py401/read4.md)
 1. [Linked List](py401/dsa/linked_list.md)
+1. [Class 6 - Readings for Lab](py401/read6.md)
 
 ## JavaScript 401 Notes
 
