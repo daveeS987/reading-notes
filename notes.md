@@ -46,3 +46,5 @@ pytest
 - dir()
 
 - look up python docs exceptions
+
+- look into coverage.py
