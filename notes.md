@@ -48,3 +48,10 @@ pytest
 - look up python docs exceptions
 
 - look into coverage.py
+
+- nervous nelly
+
+- write a function that takes a linked list that has values of single letters, return a string that spells out whatever the letters are.
+
+
+-

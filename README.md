@@ -30,6 +30,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 5 - Linked List](py401/dsa/linked_list.md)
 1. [Class 6 - Readings for Lab](py401/read6.md)
 1. [Class 7 - Python Scopes](py401/read7.md)
+1. [Class 8 - List Comprehension, Primer on Decorators](py401/read8.md)
 
 ## JavaScript 401 Notes
 
