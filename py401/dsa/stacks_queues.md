@@ -97,6 +97,7 @@ Terminology:
 
 ```python
 class Queue:
+  # this implementation used when a queue does not have a rear property
   def __init__(self, node=None):
       self.front = node
 ```
@@ -104,6 +105,7 @@ class Queue:
 ### Enqueue
 
 ```python
+    # this method is used only when a queue does not have a rear property
     def enqueue(self, value):
       node = Node(value)
 
