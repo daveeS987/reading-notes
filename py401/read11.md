@@ -5,6 +5,7 @@
 - [What is Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html)
 - [Numpy Tutorial](https://www.dataquest.io/blog/numpy-tutorial-python/)
 - [Numpy Arrays](https://www.tutorialspoint.com/numpy/index.htm)
+- [Numpy Cheat Sheet](https://s3.amazonaws.com/dq-blog-files/numpy-cheat-sheet.pdf)
 
 ---
 
@@ -34,3 +35,7 @@ Edit Mode
 - 00 - restart kernel
 
 ### Numpy
+
+- the numbeer of dimensions is called rank
+- each dimension is called an axis
+- rows are first axis, columns are second axis
