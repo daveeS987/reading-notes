@@ -8,7 +8,7 @@
 
 ---
 
-### Keyboard Shortcuts for Jupyter
+### Jupyter
 
 - "-" "=" Zoom in/ Zoom Out
 - "[" "]" Rotate Left/Right
@@ -32,3 +32,5 @@ Edit Mode
 - enter - edit currently active cell
 - shift enter - run cell
 - 00 - restart kernel
+
+### Numpy
