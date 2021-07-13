@@ -53,5 +53,22 @@ pytest
 
 - write a function that takes a linked list that has values of single letters, return a string that spells out whatever the letters are.
 
+- touch notebook.ipynb
+- select venv
+- select kernel
+- jupyter notebook
 
--
+google colab
+new notebook
+file
+download ipynb
+
+use help( and method here )
+
+import numpy as np
+import matplotlib.pylot as plt
+
+grid = np.ones(8,8,3)
+
+def render():
+plt.imshow

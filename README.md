@@ -33,6 +33,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 8 - List Comprehension, Primer on Decorators](py401/read8.md)
 1. [Class 9 - Stacks & Queues](py401/dsa/stacks_queues.md)
 1. [Class 11 - Jupyter and Numpy](py401/read11.md)
+1. [Class 12 - Pandas](py401/read12.md)
 
 ## JavaScript 401 Notes
 
