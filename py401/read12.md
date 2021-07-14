@@ -11,3 +11,15 @@
 ## Pandas
 
 - fundamental difference between pandas and NumPy: NumPy arrays have one dtype for the entire array, while pandas DataFrames have one dtype per column
+- A table of data is stored as a pandas DataFrame
+- Each column in a DataFrame is a Series
+- You can do things by applying a method to a DataFrame or Series
+- Getting data in to pandas from many different file formats or data sources is supported by read\_\* functions.
+- Exporting data out of pandas is provided by different to\_\*methods.
+- The head/tail/info methods and the dtypes attribute are convenient for a first check.
+- .loc/.iloc for columns and rows
+- When selecting subsets of data, square brackets [] are used.
+- Inside these brackets, you can use a single column/row label, a list of column/row labels, a slice of labels, a conditional expression or a colon.
+- The .plot.\* methods are applicable on both Series and DataFrames
+- By default, each of the columns is plotted as a different element (line, boxplot,…)
+- Any plot created by pandas is a Matplotlib object.
