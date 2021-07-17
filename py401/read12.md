@@ -23,3 +23,8 @@
 - The .plot.\* methods are applicable on both Series and DataFrames
 - By default, each of the columns is plotted as a different element (line, boxplot,…)
 - Any plot created by pandas is a Matplotlib object.
+
+```python
+for index, row in df.iterrows():
+  print(index, row)
+```

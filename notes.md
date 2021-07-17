@@ -72,3 +72,6 @@ grid = np.ones(8,8,3)
 
 def render():
 plt.imshow
+
+given a linked list, uses a stack to reverse the list
+
