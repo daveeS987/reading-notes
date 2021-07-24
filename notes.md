@@ -74,4 +74,3 @@ def render():
 plt.imshow
 
 given a linked list, uses a stack to reverse the list
-
