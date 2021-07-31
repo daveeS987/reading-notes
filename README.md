@@ -38,6 +38,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 14 - Data Visualization](py401/read14.md)
 1. [Class 15 - Trees](py401/read15.md)
 1. [Class 16 - Machine Learning Intro](py401/read16.md)
+1. [Class 17 - Web Scraping](py401/read17.md)
 
 ## JavaScript 401 Notes
 
