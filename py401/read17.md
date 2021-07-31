@@ -7,3 +7,5 @@
 - [How to scrape websites without getting blocked](https://www.scrapehero.com/how-to-prevent-getting-blacklisted-while-scraping/)
 - [Track Amazon Prices](https://www.youtube.com/watch?v=Bg9r_yLk7VY)
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
+
+## Notes
