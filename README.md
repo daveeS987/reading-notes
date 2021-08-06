@@ -4,23 +4,6 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 
 ## Table of Contents
 
-## 301 Notes
-
-1. [Read: 01 - SMACSS and Responsive Web Design](301/3read1.md)
-1. [Read: 02 - jQuery, Events, and The DOM](301/3read2.md)
-1. [Read: 03 - Flexbox and Templating](301/3read3.md)
-1. [Read: 04 - Responsive Web Design and Regular Expressions](301/3read4.md)
-1. [Read: 05 - Heroku Deployment](301/3read5.md)
-1. [Read: 06 - Node, Express, and API](301/3read6.md)
-1. [Read: 07 - APIs continued](301/3read7.md)
-1. [Read: 08 - SQL](301/3read8.md)
-1. [Read: 09 - Refactoring](301/3read9.md)
-1. [Read: 10 - The Call Stack and Debugging](301/3read10.md)
-1. [Read: 11 - EJS](301/3read11.md)
-1. [Read: 12 - Components](301/3read12.md)
-1. [Read: 13 - Update/Delete](301/3read13.md)
-1. [Read: 14a - DB Normalization](301/3read14.md)
-
 ## Python 401 Notes
 
 1. [Class 1](py401/read1.md)
@@ -40,6 +23,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 16 - Machine Learning Intro](py401/read16.md)
 1. [Class 17 - Web Scraping](py401/read17.md)
 1. [Class 18 - Cryptography](py401/read18.md)
+1. [Class 19 - Automations](py401/read19.md)
 
 ## JavaScript 401 Notes
 
@@ -81,6 +65,23 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Binary Trees and Binary Search Trees](js401/4read-trees.md)
 1. [HashTables](js401/4read-hashtables.md)
 1. [Graphs](js401/4read-graphs.md)
+
+## 301 Notes
+
+1. [Read: 01 - SMACSS and Responsive Web Design](301/3read1.md)
+1. [Read: 02 - jQuery, Events, and The DOM](301/3read2.md)
+1. [Read: 03 - Flexbox and Templating](301/3read3.md)
+1. [Read: 04 - Responsive Web Design and Regular Expressions](301/3read4.md)
+1. [Read: 05 - Heroku Deployment](301/3read5.md)
+1. [Read: 06 - Node, Express, and API](301/3read6.md)
+1. [Read: 07 - APIs continued](301/3read7.md)
+1. [Read: 08 - SQL](301/3read8.md)
+1. [Read: 09 - Refactoring](301/3read9.md)
+1. [Read: 10 - The Call Stack and Debugging](301/3read10.md)
+1. [Read: 11 - EJS](301/3read11.md)
+1. [Read: 12 - Components](301/3read12.md)
+1. [Read: 13 - Update/Delete](301/3read13.md)
+1. [Read: 14a - DB Normalization](301/3read14.md)
 
 ### Contact Info
 

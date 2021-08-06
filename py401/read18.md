@@ -9,3 +9,5 @@
 - [How Computers Generate Random Numbers](https://www.howtogeek.com/183051/htg-explains-how-computers-generate-random-numbers/)
 
 ## Notes
+
+given a tree, using post order traversal, return largest item in tree
