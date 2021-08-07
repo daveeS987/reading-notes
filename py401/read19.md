@@ -7,3 +7,5 @@
 - [Automation Ideas](https://www.youtube.com/watch?v=qbW6FRbaSl0&t=69s)
 - [Automating Your Browser and Desktop Apps](https://www.youtube.com/watch?v=dZLyfbSQPXI)
 - [Watchdog](https://pythonhosted.org/watchdog/)
+
+## Notes
