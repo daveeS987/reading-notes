@@ -26,6 +26,6 @@ Commands
 - python manage.py shell
 - python manage.py createsuperuser
 
-- {{}} > means interpolation, when you bring a value from views function
-- {% STUFF HERE %} - for loading, importing, or python logic
+- `{{}}` - means interpolation, when you bring a value from views function
+- `{% STUFF HERE %}` - for loading, importing, or python logic
 - python template languages uses dots and not square brackets for objects
