@@ -73,4 +73,16 @@ grid = np.ones(8,8,3)
 def render():
 plt.imshow
 
-given a linked list, uses a stack to reverse the list
+poetry add coverage
+touch .coveragerc
+
+coverage run -m pytest
+coverage report
+
+inisde coveragerc file
+
+[run]
+omit =
+.venv/\*
+
+pytest-watch

@@ -24,6 +24,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 17 - Web Scraping](py401/read17.md)
 1. [Class 18 - Cryptography](py401/read18.md)
 1. [Class 19 - Automations](py401/read19.md)
+1. [Class 26 - Intro to Django](py401/read26.md)
 
 ## JavaScript 401 Notes
 
