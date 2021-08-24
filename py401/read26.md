@@ -20,6 +20,11 @@
 - `python manage.py shell`
 - `python manage.py createsuperuser`
 - `python manage.py test`
+- `poetry add djangorestframework`
+- `poetry add django-cors-headers`
+- `poetry add coverage`
+- `coverage run --omit='*/.venv/*' manage.py test`
+- `coverage html`
 
 ### 3 Step Guide for Making Model Changes
 
