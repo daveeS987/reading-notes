@@ -39,4 +39,30 @@ CORS_ALLOWED_ORIGINS = [
 ]
 ```
 
--
+- Add app paths and api paths to main url
+
+example:
+
+```python
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", include("blog.urls", namespace="blog")),
+    path("api/", include("blog_api.urls", namespace="blog_api")),
+]
+```
+
+- Create Models
+- Import dependencies inside models.py
+
+```python
+
+from django.db import models
+from django.contrib.auth.models import User
+from django.utils import timezone
+
+```
+
+- Register models in admin

@@ -32,3 +32,5 @@ Common Field Arguments
 - blank
 - choices
 - primary_key
+
+- when you make a class, use singular because Django will add an s

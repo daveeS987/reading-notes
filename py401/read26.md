@@ -10,18 +10,18 @@
 
 ## Commands
 
-- `django-admin startproject NAMEofPROJECT .` -> remember the dot
+- `django-admin startproject NAMEofPROJECT .`
 - `python manage.py startapp NAMEofAPP`
-- `python manage.py runserver` - starts the server
-- `python manage.py makemigrations NAMEofAPP` - tells django changes were made to model
-- `python manage.py migrate` - creates model tables in database
+- `python manage.py runserver`
+- `python manage.py makemigrations NAMEofAPP`
+- `python manage.py migrate`
 - `python manage.py sqlmigrate NAMEofAPP` - doesn't run migration. It prints to the screen so you can see what SQL Django thinks is required
 - `python mangage.py check` - checks for problems in project without making migrations or touching the database
 - `python manage.py shell`
 - `python manage.py createsuperuser`
-- `python manage.py test`
 - `poetry add djangorestframework`
 - `poetry add django-cors-headers`
+- `python manage.py test`
 - `poetry add coverage`
 - `coverage run --omit='*/.venv/*' manage.py test`
 - `coverage html`
@@ -44,19 +44,22 @@
 
 - goes into Installed_apps section
 
-### Add Views
+### Add App Url to Main Project url
 
-- These are functions or class that takes care of routes
+- Import include module
 
 Example:
 
 ```python
 
-from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.contrib import admin
+from django.urls import path
+from django.urls.conf import include
 
-class HomeView(TemplateView):
-  template_name='home.html'
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('snacks.urls'))
+]
 
 ```
 
@@ -79,22 +82,19 @@ urlpatterns = [
 ]
 ```
 
-### Add App Url to Main Project url
+### Add Views
 
-- Import include module
+- These are functions or class that takes care of routes
 
 Example:
 
 ```python
 
-from django.contrib import admin
-from django.urls import path
-from django.urls.conf import include
+from django.shortcuts import render
+from django.views.generic import TemplateView
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('snacks.urls'))
-]
+class HomeView(TemplateView):
+  template_name='home.html'
 
 ```
 
