@@ -32,5 +32,3 @@ Common Field Arguments
 - blank
 - choices
 - primary_key
-
-## Django Admin Site
