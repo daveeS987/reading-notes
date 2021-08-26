@@ -26,27 +26,13 @@
 - `coverage run --omit='*/.venv/*' manage.py test`
 - `coverage html`
 
-### 3 Step Guide for Making Model Changes
-
-- change models in models.py
-- Run `python manage.py makemigrations` to create migrations for those changes
-- Run `python manage.py migrate` to apply those changes to the database.
-
-### Extra Notes
-
-- Interpolation - when you bring a value from views function
-- Python Templating - for loading, importing, or python logic
-- Python template languages uses dots and not square brackets for objects
-
 ## Steps to Set up Project
 
-### Add our app to settings.py in main project
+### Add App to settings.py in main project
 
-- goes into Installed_apps section
+- Goes into INSTALLED_APPS section
 
 ### Add App Url to Main Project url
-
-- Import include module
 
 Example:
 
@@ -63,39 +49,80 @@ urlpatterns = [
 
 ```
 
-### Add urls.py for our app folder
+### Add urls.py for our app
 
-- import function or class from views
-- adds path to urlpatterns
-- path arguments(the route, the template, the name)
+- import views
 
 ```python
 
 from django.urls import path
 from django.urls.resolvers import URLPattern
 
-from .views import HomeView, AboutView
+from .views import SnackListView, SnackDetailView
 
+# bring views>templates from views
 urlpatterns = [
-  path('', HomeView.as_view(), name='home'),
-  path('about', AboutView.as_view(), name='about')
+    path("", SnackListView.as_view(), name="snack_list"),
+    path("<int:pk>", SnackDetailView.as_view(), name="snack_detail"),
 ]
 ```
 
 ### Add Views
-
-- These are functions or class that takes care of routes
 
 Example:
 
 ```python
 
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView, DetailView
 
-class HomeView(TemplateView):
-  template_name='home.html'
+from .models import Snack
 
+
+class SnackListView(ListView):
+    template_name = "snack_list.html"
+    model = Snack
+    context_object_name = "snacks"
+
+
+class SnackDetailView(DetailView):
+    template_name = "snack_detail.html"
+    model = Snack
+
+
+```
+
+### Add Models
+
+Example:
+
+```python
+
+from django.db import models
+from django.contrib.auth import get_user_model
+
+# Create your models here.
+class Movies(models.Model):
+    name = models.CharField(max_length=64)
+    rating = models.IntegerField(max_length=10, default=0)
+    reviewer = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+```
+
+### Create Super User
+
+- `python manage.py createsuperuser`
+
+### Register Models with Admin
+
+```python
+
+from django.contrib import admin
+from .models import Snack
+
+admin.site.register(Snack)
 ```
 
 ### Add template
@@ -105,3 +132,64 @@ class HomeView(TemplateView):
 - remember to extends
 
 ### Add template path to dirs in settings, base_dir/"templates"
+
+### Tests
+
+Example:
+
+```python
+
+from django.test import TestCase
+from django.contrib.auth.models import User
+from django.urls import reverse
+from .models import Snack
+
+
+class SnacksModelTest(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username="tester", email="tester@gmail.com", password="pass")
+        self.new_snack = Snack.objects.create(name="Cheetos", description="cheesy", purchaser=self.user)
+
+    def test_string_representation(self):
+        self.assertEqual(str(self.new_snack), "Cheetos")
+
+    def test_snack_name(self):
+        self.assertEqual(self.new_snack.name, "Cheetos")
+
+
+class SnackListViewTest(TestCase):
+    def test_list_page_status_code(self):
+        url = reverse("snack_list")
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+
+    def test_snack_list_template(self):
+        url = reverse("snack_list")
+        response = self.client.get(url)
+        self.assertTemplateUsed(response, "snack_list.html")
+        self.assertTemplateUsed(response, "base.html")
+
+
+class SnackDetailsViewTest(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username="tester", email="tester@gmail.com", password="pass")
+        self.new_snack = Snack.objects.create(name="Cheetos", description="cheesy", purchaser=self.user)
+
+    def test_details_page_status_code(self):
+        url = reverse("snack_detail", args=(self.new_snack.id,))
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+
+    def test_details_page_template(self):
+        url = reverse("snack_detail", args=(self.new_snack.id,))
+        response = self.client.get(url)
+        self.assertTemplateUsed(response, "snack_detail.html")
+        self.assertTemplateUsed(response, "base.html")
+
+    def test_details_page_content(self):
+        url = reverse("snack_detail", args=(self.new_snack.id,))
+        response = self.client.get(url)
+        self.assertContains(response, self.new_snack.name)
+
+
+```
