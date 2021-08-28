@@ -28,16 +28,22 @@
 - `coverage run --omit='*/.venv/*' manage.py test`
 - `coverage html`
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ## Steps to Set up Project
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Add App to settings.py in main project
 
 - Goes into INSTALLED_APPS section
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Add App Url to Main Project url
@@ -57,6 +63,8 @@ urlpatterns = [
 
 ```
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Add urls.py to each app -> import views
@@ -77,6 +85,8 @@ urlpatterns = [
 ]
 ```
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Create Views
@@ -104,6 +114,8 @@ class SnackDetailView(DetailView):
 
 ```
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Add Models
@@ -126,6 +138,8 @@ class Snack(models.Model):
 
 ```
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Create Super User
@@ -144,6 +158,8 @@ from .models import Snack
 admin.site.register(Snack)
 ```
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Add template
@@ -152,16 +168,18 @@ Commands:
 
 ```django-html
 
-{{ extends 'path/to/base.html'}}
-{{ block content }}{{ endblock content }}
-{% url 'NAME_OF_URL' SLUG_OR_ID %}
-{% %}
-{{ load static }}
-{% static 'path/to/css/file' %}
-{{ include 'path/to/module' with CAN=ADD CUSTOM=PARAMETERS}}
+{{ extends 'path/to/base.html'}}.
+{{ block content }}{{ endblock content }}.
+{% url 'NAME_OF_URL' SLUG_OR_ID %}.
+{% %}.
+{{ load static }}.
+{% static 'path/to/css/file' %}.
+{{ include 'path/to/module' with CAN=ADD CUSTOM=PARAMETERS}}.
 
 ```
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Add template path to dirs in settings, base_dir/"templates" if needed
@@ -229,6 +247,8 @@ class SnackDetailsViewTest(TestCase):
 
 ```
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Image Uploading
@@ -242,6 +262,8 @@ MEDIA_ROOT = BASE_DIR / 'uploads'
 MEDIA_URL = '/files/'
 ```
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Image Serving
