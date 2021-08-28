@@ -166,6 +166,7 @@ admin.site.register(Snack)
 
 Commands:
 
+```
 {{ extends 'path/to/base.html'}}
 {{ block content }}{{ endblock content }}
 {{ url 'NAME_OF_URL' SLUG_OR_ID }}
@@ -173,6 +174,7 @@ Commands:
 {{ load static }}
 {% static 'path/to/css/file' %}
 {{ include 'path/to/module' with CAN=ADD CUSTOM=PARAMETERS}}
+```
 
 <!--  -->
 <!--  -->
