@@ -8,6 +8,8 @@
 - [First Django App - Part 1](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 - [First Django App - Part 2](https://docs.djangoproject.com/en/3.0/intro/tutorial02/)
 
+<!-- ----------------------------------------------------------------------- -->
+
 ## Commands
 
 - `django-admin startproject NAMEofPROJECT .`
@@ -26,11 +28,17 @@
 - `coverage run --omit='*/.venv/*' manage.py test`
 - `coverage html`
 
+<!-- ----------------------------------------------------------------------- -->
+
 ## Steps to Set up Project
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Add App to settings.py in main project
 
 - Goes into INSTALLED_APPS section
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Add App Url to Main Project url
 
@@ -49,9 +57,11 @@ urlpatterns = [
 
 ```
 
-### Add urls.py for our app
+<!-- ----------------------------------------------------------------------- -->
 
-- Import views
+### Add urls.py to each app -> import views
+
+- Example
 
 ```python
 
@@ -66,6 +76,8 @@ urlpatterns = [
     path("<int:pk>", SnackDetailView.as_view(), name="snack_detail"),
 ]
 ```
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Create Views
 
@@ -92,6 +104,8 @@ class SnackDetailView(DetailView):
 
 ```
 
+<!-- ----------------------------------------------------------------------- -->
+
 ### Add Models
 
 Example:
@@ -112,9 +126,13 @@ class Snack(models.Model):
 
 ```
 
+<!-- ----------------------------------------------------------------------- -->
+
 ### Create Super User
 
 - `python manage.py createsuperuser`
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Register Models with Admin
 
@@ -126,9 +144,11 @@ from .models import Snack
 admin.site.register(Snack)
 ```
 
+<!-- ----------------------------------------------------------------------- -->
+
 ### Add template
 
-- commands to remember
+Commands:
 
 ```django-html
 
@@ -142,11 +162,15 @@ admin.site.register(Snack)
 
 ```
 
+<!-- ----------------------------------------------------------------------- -->
+
 ### Add template path to dirs in settings, base_dir/"templates" if needed
+
+<!-- ----------------------------------------------------------------------- -->
 
 ### Tests
 
-Example:
+Examples:
 
 ```python
 
@@ -205,21 +229,24 @@ class SnackDetailsViewTest(TestCase):
 
 ```
 
+<!-- ----------------------------------------------------------------------- -->
+
 ### Image Uploading
 
-- install Pillow
-- and media root and url into settings.py
+- Install Pillow
+- Add media root and url into settings.py
+- This will create a uploads/images folder in our root
 
 ```python
 MEDIA_ROOT = BASE_DIR / 'uploads'
 MEDIA_URL = '/files/'
 ```
 
-- this will create a uploads/images folder in our root
+<!-- ----------------------------------------------------------------------- -->
 
 ### Image Serving
 
-- add image serving to main url pattern
+- Add image serving to main url pattern
 
 ```python
 
