@@ -26,6 +26,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 19 - Automations](py401/read19.md)
 1. [Class 26 - Intro to Django](py401/read26.md)
 1. [Class 27 - Django Models](py401/read27.md)
+1. [Class 28 - Django CRUD and Forms](py401/read28.md)
 1. [Django API Notes](py401/djangoapi.md)
 
 ## JavaScript 401 Notes

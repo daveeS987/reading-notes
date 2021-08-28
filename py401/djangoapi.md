@@ -5,6 +5,7 @@
 - `poetry init -n`
 - `poetry add djangorestframework`
 - `poetry add django-cors-headers`
+- `poetry add djangorestframework-simplejwt`
 - `poetry add coverage`
 - `django-admin startproject NAMEofPROJECT .`
 - `python manage.py startapp NAMEofAPP`
@@ -22,10 +23,13 @@
 ## Steps
 
 - add 'rest_framework' to INSTALLED_APPS
-- add REST_FRAMEWORK to settings.py. This deals with permissions
+- add REST_FRAMEWORK to settings.py. This deals with permissions. Keep allowany during build
 
 ```python
-REST_FRAMEWORK = {"DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"]}
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"],
+    "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
+}
 ```
 
 - add 'corsheaders' to INSTALLED_APPS
@@ -44,14 +48,23 @@ CORS_ALLOWED_ORIGINS = [
 example:
 
 ```python
+
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("blog.urls", namespace="blog")),
     path("api/", include("blog_api.urls", namespace="blog_api")),
+    path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
+    path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]
+
 ```
 
 - Create Models
@@ -65,4 +78,8 @@ from django.utils import timezone
 
 ```
 
-- Register models in admin
+- Remember to add this in settings.py
+
+```python
+AUTH_USER_MODEL = "users.NewUser"
+```

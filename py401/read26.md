@@ -51,7 +51,7 @@ urlpatterns = [
 
 ### Add urls.py for our app
 
-- import views
+- Import views
 
 ```python
 
@@ -60,14 +60,14 @@ from django.urls.resolvers import URLPattern
 
 from .views import SnackListView, SnackDetailView
 
-# bring views>templates from views
+app_name="snacks"
 urlpatterns = [
     path("", SnackListView.as_view(), name="snack_list"),
     path("<int:pk>", SnackDetailView.as_view(), name="snack_detail"),
 ]
 ```
 
-### Add Views
+### Create Views
 
 Example:
 
@@ -99,16 +99,17 @@ Example:
 ```python
 
 from django.db import models
-from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User
 
-# Create your models here.
-class Movies(models.Model):
+
+class Snack(models.Model):
     name = models.CharField(max_length=64)
-    rating = models.IntegerField(max_length=10, default=0)
-    reviewer = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    description = models.TextField()
+    purchaser = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
+
 ```
 
 ### Create Super User
@@ -127,11 +128,21 @@ admin.site.register(Snack)
 
 ### Add template
 
-- example: index, about
-- can create base template
-- remember to extends
+- commands to remember
 
-### Add template path to dirs in settings, base_dir/"templates"
+```django-html
+
+{{ extends 'path/to/base.html'}}
+{{ block content }}{{ endblock content }}
+{% url 'NAME_OF_URL' SLUG_OR_ID %}
+{% %}
+{{ load static }}
+{% static 'path/to/css/file' %}
+{{ include 'path/to/module' with CAN=ADD CUSTOM=PARAMETERS}}
+
+```
+
+### Add template path to dirs in settings, base_dir/"templates" if needed
 
 ### Tests
 
@@ -191,5 +202,36 @@ class SnackDetailsViewTest(TestCase):
         response = self.client.get(url)
         self.assertContains(response, self.new_snack.name)
 
+
+```
+
+### Image Uploading
+
+- install Pillow
+- and media root and url into settings.py
+
+```python
+MEDIA_ROOT = BASE_DIR / 'uploads'
+MEDIA_URL = '/files/'
+```
+
+- this will create a uploads/images folder in our root
+
+### Image Serving
+
+- add image serving to main url pattern
+
+```python
+
+# add these modules to main url
+from django.conf.urls.static import static
+from django.conf import settings
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', RedirectView.as_view(url='/meetups')),
+    path('meetups/', include('meetups.urls'))
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 ```
