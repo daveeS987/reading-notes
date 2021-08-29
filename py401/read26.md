@@ -53,8 +53,7 @@ Example:
 ```python
 
 from django.contrib import admin
-from django.urls import path
-from django.urls.conf import include
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -76,12 +75,14 @@ urlpatterns = [
 from django.urls import path
 from django.urls.resolvers import URLPattern
 
-from .views import SnackListView, SnackDetailView
+from .views import SnackListView, SnackDetailView, SnackCreateView, SnackUpdateView, SnackDeleteView
 
-app_name="snacks"
 urlpatterns = [
     path("", SnackListView.as_view(), name="snack_list"),
-    path("<int:pk>", SnackDetailView.as_view(), name="snack_detail"),
+    path("<int:pk>/", SnackDetailView.as_view(), name="snack_detail"),
+    path("new/", SnackCreateView.as_view(), name="snack_create"),
+    path("<int:pk>/edit", SnackUpdateView.as_view(), name="snack_update"),
+    path("<int:pk>/delete", SnackDeleteView.as_view(), name="snack_delete"),
 ]
 ```
 
@@ -95,21 +96,41 @@ Example:
 
 ```python
 
+from django.db import models
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView, DetailView
-
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Snack
+from django.urls import reverse_lazy
 
 
 class SnackListView(ListView):
-    template_name = "snack_list.html"
+    template_name = "snacks/snack_list.html"
     model = Snack
-    context_object_name = "snacks"
 
 
 class SnackDetailView(DetailView):
-    template_name = "snack_detail.html"
+    template_name = "snacks/snack_detail.html"
     model = Snack
+
+
+class SnackCreateView(CreateView):
+    template_name = "snacks/snack_create.html"
+    model = Snack
+    fields = ["name", "description", "purchaser"]
+    success_url = reverse_lazy("snack_list")
+
+
+class SnackUpdateView(UpdateView):
+    template_name = "snacks/snack_update.html"
+    model = Snack
+    fields = ["name", "description", "purchaser"]
+    success_url = reverse_lazy("snack_list")
+
+
+class SnackDeleteView(DeleteView):
+    template_name = "snacks/snack_delete.html"
+    model = Snack
+    success_url = reverse_lazy("snack_list")
 
 
 ```
@@ -142,12 +163,6 @@ class Snack(models.Model):
 <!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
-### Create Super User
-
-- `python manage.py createsuperuser`
-
-<!-- ----------------------------------------------------------------------- -->
-
 ### Register Models with Admin
 
 ```python
@@ -162,6 +177,12 @@ admin.site.register(Snack)
 <!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
+### Create Super User
+
+- `python manage.py createsuperuser`
+
+<!-- ----------------------------------------------------------------------- -->
+
 ### Add template
 
 Commands:
@@ -172,6 +193,8 @@ Commands:
 
 ### Add template path to dirs in settings, base_dir/"templates" if needed
 
+<!--  -->
+<!--  -->
 <!-- ----------------------------------------------------------------------- -->
 
 ### Tests
@@ -180,59 +203,70 @@ Examples:
 
 ```python
 
-from django.test import TestCase
 from django.contrib.auth.models import User
+from django.test import TestCase
 from django.urls import reverse
+
 from .models import Snack
 
 
-class SnacksModelTest(TestCase):
+class SnackTests(TestCase):
     def setUp(self):
-        self.user = User.objects.create_user(username="tester", email="tester@gmail.com", password="pass")
-        self.new_snack = Snack.objects.create(name="Cheetos", description="cheesy", purchaser=self.user)
+        self.user = User.objects.create_user(username="tester", email="tester@email.com", password="pass")
+
+        self.new_snack = Snack.objects.create(
+            name="Cheetos",
+            description="cheetos description",
+            purchaser=self.user,
+        )
 
     def test_string_representation(self):
         self.assertEqual(str(self.new_snack), "Cheetos")
 
-    def test_snack_name(self):
-        self.assertEqual(self.new_snack.name, "Cheetos")
+    def test_new_snack_content(self):
+        self.assertEqual(f"{self.new_snack.name}", "Cheetos")
+        self.assertEqual(f"{self.new_snack.purchaser}", "tester")
+        self.assertEqual(f"{self.new_snack.description}", "cheetos description")
 
-
-class SnackListViewTest(TestCase):
-    def test_list_page_status_code(self):
-        url = reverse("snack_list")
-        response = self.client.get(url)
+    def test_snack_list_view(self):
+        response = self.client.get(reverse("snack_list"))
         self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Cheetos")
+        self.assertTemplateUsed(response, "snacks/base.html")
+        self.assertTemplateUsed(response, "snacks/snack_list.html")
 
-    def test_snack_list_template(self):
-        url = reverse("snack_list")
-        response = self.client.get(url)
-        self.assertTemplateUsed(response, "snack_list.html")
-        self.assertTemplateUsed(response, "base.html")
-
-
-class SnackDetailsViewTest(TestCase):
-    def setUp(self):
-        self.user = User.objects.create_user(username="tester", email="tester@gmail.com", password="pass")
-        self.new_snack = Snack.objects.create(name="Cheetos", description="cheesy", purchaser=self.user)
-
-    def test_details_page_status_code(self):
-        url = reverse("snack_detail", args=(self.new_snack.id,))
-        response = self.client.get(url)
+    def test_snack_detail_view(self):
+        response = self.client.get(reverse("snack_detail", args="1"))
+        no_response = self.client.get("/100000/")
         self.assertEqual(response.status_code, 200)
+        self.assertEqual(no_response.status_code, 404)
+        self.assertContains(response, "Purchaser: tester")
+        self.assertTemplateUsed(response, "snacks/base.html")
+        self.assertTemplateUsed(response, "snacks/snack_detail.html")
 
-    def test_details_page_template(self):
-        url = reverse("snack_detail", args=(self.new_snack.id,))
-        response = self.client.get(url)
-        self.assertTemplateUsed(response, "snack_detail.html")
-        self.assertTemplateUsed(response, "base.html")
+    def test_snack_create_view(self):
+        response = self.client.post(
+            reverse("snack_create"),
+            {
+                "name": "Doritos",
+                "description": "doritos description",
+                "purchaser": self.user.id,
+            },
+            follow=True,
+        )
 
-    def test_details_page_content(self):
-        url = reverse("snack_detail", args=(self.new_snack.id,))
-        response = self.client.get(url)
-        self.assertContains(response, self.new_snack.name)
+        self.assertRedirects(response, reverse("snack_list"))
 
+    def test_snack_update_view_redirect(self):
+        response = self.client.post(
+            reverse("snack_update", args="1"),
+            {"name": "Updated name", "description": "new description", "purchaser": self.user.id},
+        )
+        self.assertRedirects(response, reverse("snack_list"))
 
+    def test_snack_delete_view(self):
+        response = self.client.get(reverse("snack_delete", args="1"))
+        self.assertEqual(response.status_code, 200)
 ```
 
 <!--  -->
