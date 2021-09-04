@@ -306,3 +306,22 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 ```
+
+### Env
+
+- `poetry add django-environ`
+- put below into settings.py
+
+```python
+import environ
+
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+
+environ.Env.read_env()
+
+SECRET_KEY = env.str('SECRET')
+
+DEBUG = env.bool('DEBUG')
+```

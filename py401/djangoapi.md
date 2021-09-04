@@ -14,6 +14,9 @@
 - `poetry add django-cors-headers`
 - `poetry add djangorestframework-simplejwt`
 - `poetry add coverage`
+- `poetry add pyyaml`
+- `poetry add uritemplate`
+- `poetry add coreapi`
 - `django-admin startproject NAMEofPROJECT .`
 - `python manage.py startapp NAMEofAPP`
 - `python manage.py runserver`
@@ -67,8 +70,8 @@ INSTALLED_APPS = [
 
 ### Add REST_FRAMEWORK to settings.py
 
-- default permission classes - restframework
-- default authentication classes - jwt
+- Default permission classes - restframework
+- Default authentication classes - jwt
 
 Example:
 
@@ -76,6 +79,7 @@ Example:
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"],
     "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
+    "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
 ```
 
@@ -113,7 +117,7 @@ Example:
 ```python
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://127.0.0.1:9000",
+    "http://127.0.0.1:3001",
 ]
 ```
 
@@ -178,18 +182,27 @@ Example:
 
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.schemas import get_schema_view
+from rest_framework.documentation import include_docs_urls
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", include("blog.urls", namespace="blog")),
-    path("api/", include("blog_api.urls", namespace="blog_api")),
-    path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
     path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
+    path("admin/", admin.site.urls),
+    path("api/", include("blog_api.urls", namespace="blog_api")),
+    path("api/user/", include("users.urls", namespace="users")),
+    path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
+    path("", include("blog.urls", namespace="blog")),
+    path("docs/", include_docs_urls(title="BlogAPI")),
+    path(
+        "schema",
+        get_schema_view(title="BlogAPI", description="API for the BlogAPI", version="1.0.0"),
+        name="openapi-schema",
+    ),
 ]
 
 ```
@@ -299,7 +312,7 @@ admin.site.register(models.Category)
 <!--  -->
 <!-- -------------------------------------------------------------------------------------------------------- -->
 
-### Create url.py for API
+### Create url.py for api OR -> Use Routers
 
 Example:
 
@@ -323,22 +336,50 @@ urlpatterns = [
 <!--  -->
 <!-- -------------------------------------------------------------------------------------------------------- -->
 
+### Create Routers for url IN PLACE OF ORIGINAL URL
+
+Example:
+
+```python
+
+from rest_framework.routers import DefaultRouter
+
+from .views import PostList
+
+app_name = "blog_api"
+
+router = DefaultRouter()
+router.register("", PostList, basename="post")
+urlpatterns = router.urls
+
+
+```
+
+<!--  -->
+<!--  -->
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
 ### Create Views
 
 Example:
 
 ```python
-from rest_framework import generics
-from blog.models import Post
-from .serializers import PostSerializer
+
+from rest_framework import generics, serializers
 from rest_framework.permissions import (
     SAFE_METHODS,
     DjangoModelPermissions,
     IsAdminUser,
     BasePermission,
+    IsAuthenticated,
     IsAuthenticatedOrReadOnly,
 )
+from rest_framework import viewsets, filters
+from django.shortcuts import get_object_or_404
+from rest_framework.response import Response
 
+from blog.models import Post
+from .serializers import PostSerializer
 
 # We create a new Permission
 class PostUserWritePermission(BasePermission):
@@ -351,16 +392,19 @@ class PostUserWritePermission(BasePermission):
         return obj.author == request.user
 
 
-class PostList(generics.ListCreateAPIView):
-    permission_classes = [IsAuthenticatedOrReadOnly]
-    queryset = Post.postobjects.all()
-    serializer_class = PostSerializer
-
-
-class PostDetail(generics.RetrieveUpdateDestroyAPIView, PostUserWritePermission):
+class PostList(viewsets.ModelViewSet):
     permission_classes = [PostUserWritePermission]
-    queryset = Post.objects.all()
     serializer_class = PostSerializer
+    queryset = Post.postobjects.all()
+
+    # this allows us to capture slugs off the url to use in our search
+    def get_object(self, queryset=None, **kwargs):
+        item = self.kwargs.get("pk")
+        return get_object_or_404(Post, slug=item)
+
+    # Define Custom QuerySet
+    def get_queryset(self):
+        return Post.objects.all()
 
 
 ```
