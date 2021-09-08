@@ -8,3 +8,5 @@
 - [hash table wiki](https://en.wikipedia.org/wiki/Hash_table)
 
 ## Notes
+
+pytest watch -c

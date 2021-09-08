@@ -9,14 +9,7 @@
 ## Commands
 
 - `poetry init -n`
-- `poetry add Django`
-- `poetry add djangorestframework`
-- `poetry add django-cors-headers`
-- `poetry add djangorestframework-simplejwt`
-- `poetry add coverage`
-- `poetry add pyyaml`
-- `poetry add uritemplate`
-- `poetry add coreapi`
+- `poetry add Django djangorestframework djangorestframework-simplejwt django-cors-headers coverage pyyaml uritemplate coreapi pillow`
 - `django-admin startproject NAMEofPROJECT .`
 - `python manage.py startapp NAMEofAPP`
 - `python manage.py runserver`
@@ -29,6 +22,8 @@
 - `python manage.py test`
 - `coverage run --omit='*/.venv/*' manage.py test`
 - `coverage html`
+
+poetry add djangorestframework djangorestframework-simplejwt django-cors-headers coverage pyyaml uritemplate coreapi
 
 ## Steps
 
