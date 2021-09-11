@@ -23,7 +23,7 @@
 - `coverage run --omit='*/.venv/*' manage.py test`
 - `coverage html`
 
-poetry add djangorestframework djangorestframework-simplejwt django-cors-headers coverage pyyaml uritemplate coreapi
+poetry add djangorestframework django-cors-headers coverage pyyaml uritemplate coreapi
 
 ## Steps
 
@@ -35,8 +35,7 @@ poetry add djangorestframework djangorestframework-simplejwt django-cors-headers
 
 - rest_framework
 - corsheader
-- rest_framework_simplejwt.token_blacklist
-- "users" was something we created to modify built in User
+<!-- - rest_framework_simplejwt.token_blacklist -->
 
 Example:
 
@@ -51,7 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "corsheaders",
-    "rest_framework_simplejwt.token_blacklist",
+    # "rest_framework_simplejwt.token_blacklist",
     "blog_api",
     "blog",
     "users",
@@ -73,7 +72,7 @@ Example:
 ```python
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"],
-    "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
+    # "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
 ```
@@ -105,14 +104,17 @@ MIDDLEWARE = [
 <!--  -->
 <!-- -------------------------------------------------------------------------------------------------------- -->
 
-### Add CORS_ALLOWED_ORIGINS to settings.py
+### Add CORS_ALLOWED_ORIGINS and Allowed Hosts to settings.py
 
 Example:
 
 ```python
+
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://127.0.0.1:3001",
+    "http://127.0.0.1:3000",
 ]
 ```
 

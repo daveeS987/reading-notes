@@ -28,3 +28,14 @@ Commands
 # Dockerfile
 FROM python:3.7-alpine
 ```
+
+- docker compose
+- docker file
+- poetry
+- allowed host
+
+docker-compose -d
+
+docker-compose ps shows any containers running
+docker-compose logs
+docker-compose up --build

@@ -17,7 +17,7 @@
 - `python manage.py runserver`
 - `python manage.py makemigrations NAMEofAPP`
 - `python manage.py migrate`
-- `python manage.py sqlmigrate NAMEofAPP` - doesn't run migration. It prints to the screen so you can see what SQL Django thinks is required
+- `python manage.py sqlmigrate NAMEofAPP`
 - `python mangage.py check` - checks for problems in project without making migrations or touching the database
 - `python manage.py shell`
 - `python manage.py createsuperuser`
