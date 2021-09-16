@@ -10,3 +10,17 @@
 - [Django Migrations Primer](https://realpython.com/django-migrations-a-primer/)
 
 ## Notes
+
+http GET :8000/api/v1/posts/ ---> dont forget trailing slash
+
+remember to use Post to api/token username='admin' password='123'
+
+use token/ route to sign in. -> will return tokens
+
+'Authorization: Bearer alkdjf;aldkfja;dlfkja;dlfja;dflk' -> attach this to a get request put token in header
+
+remember to add all
+
+whitenoise
+
+python manage.py collectstatic -> this uses whitenoise to automatically add styling

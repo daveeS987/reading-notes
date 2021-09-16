@@ -18,6 +18,7 @@ These will allow database to persist
 - add permissions.py
 - poetry add psycopg2-binary
 
+- poetry export -o requirements.txt --without-hashes
 - docker-compose up -d
 - docker-compose run -> run something in terminal thats inside docker container
 - docker-compose run web python manage.py migrate
