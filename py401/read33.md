@@ -24,3 +24,7 @@ remember to add all
 whitenoise
 
 python manage.py collectstatic -> this uses whitenoise to automatically add styling
+
+blog_pg_web_1 is what docker gives us
+docker exec -it blog_pg_web_1 /bin/bash
+you can use exit

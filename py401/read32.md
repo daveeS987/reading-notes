@@ -8,11 +8,15 @@
 
 ## Notes
 
-These will allow database to persist
-
+- poetry export -f requirements.txt -o requirements.txt --without-hashes
+- docker-compose -d
+- docker-compose up
+- docker-compose up --build
+- docker-compose down
 - docker-compose stop
 - docker-compose start
 - docker-compose restart
+- docker-compose logs
 - docker-compose help
 
 - add permissions.py
