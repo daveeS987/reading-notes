@@ -33,6 +33,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 32 - Permissions & Postgresql](py401/read32.md)
 1. [Class 33 - Authentication & Production Server](py401/read33.md)
 1. [Class 34 - API Deployment](py401/read34.md)
+1. [Class 35 - Graphs](py401/read35.md)
 1. [Django API Notes](py401/djangoapi.md)
 
 ## JavaScript 401 Notes
