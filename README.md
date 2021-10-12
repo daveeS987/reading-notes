@@ -38,6 +38,7 @@ Hi my name is **Davee**. This site will be used to document my notes as I'm lear
 1. [Class 37 - React 1](py401/read37.md)
 1. [Class 38 - React 2](py401/read38.md)
 1. [Class 39 - React 3](py401/read39.md)
+1. [Class 41 - React 4](py401/read41.md)
 1. [Django API Notes](py401/djangoapi.md)
 
 ## JavaScript 401 Notes
